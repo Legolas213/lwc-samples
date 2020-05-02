@@ -1,0 +1,12 @@
+<template>
+
+    <template if:true={contacts}>
+    <template for:each={contacts} for:item="contact">
+        <div key={contact.id}>
+            <c-list-composition-child contact={contact}>
+
+            </c-list-composition-child>
+    </div>
+    </template>
+</template>
+</template>

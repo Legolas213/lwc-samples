@@ -1,0 +1,21 @@
+<template>
+
+    <div class="slds-m-around_large">
+        <strong>Lifecycle Hooks</strong>
+    </div>
+
+    <div class="slds-m-around_small">
+        My Name is:- <strong>{name}</strong>
+    </div>
+
+    <div class="slds-m-around_small">
+        <lightning-input value={name} label="Please enter a Name"
+        onchange={handleChange}></lightning-input>
+    </div>
+
+    <div >
+
+        <c-lifecycle-hooks-child-one child-one-name={name}></c-lifecycle-hooks-child-one>
+    </div>
+    
+</template>

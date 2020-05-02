@@ -1,0 +1,7 @@
+<aura:component>
+
+<div>
+    <c:lwcAuraCommunication onlwcevent="{!c.handleEvent}"/>
+</div>
+
+</aura:component>

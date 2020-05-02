@@ -1,0 +1,30 @@
+<template>
+
+    <lightning-card icon-name="custom:custom113">
+        <h1>
+            CHILD TWO COMPONENT
+        </h1>
+        <div>
+            <p>Showing multiple events using BUBBLES and COMPOSED property of event</p>
+            <div>
+                <p>
+                    <lightning-button label="Both True"
+                    onclick={handleGenerate1}></lightning-button>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <lightning-button label="Both False"
+                    onclick={handleGenerate2}></lightning-button>
+                </p>
+            </div>      
+            <div>
+                <p>
+                    <lightning-button label="Bubbles true Composed false"
+                    onclick={handleGenerate3}></lightning-button>
+                </p>
+            </div>                
+        </div>
+    </lightning-card>
+    
+</template>

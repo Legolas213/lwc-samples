@@ -1,0 +1,21 @@
+<template>
+
+    <lightning-card icon-name="standard:case" title="Imperative Apex Cases">
+        <div class="slds-m-around_large">
+            <lightning-input onchange={handleChange}
+            label="Search Case"></lightning-input>
+        </div>
+        <div class="slds-m-around_large">
+            <template for:each={cases} for:item="item">
+                <div key={item.Id}>
+                    {item.Subject} <br/>
+                    {item.Description}
+                </div>
+            </template>
+            <template if:true={errors}>
+                An unexpected error has occurred. Please try again later.
+            </template>
+        </div>
+    </lightning-card>
+    
+</template>

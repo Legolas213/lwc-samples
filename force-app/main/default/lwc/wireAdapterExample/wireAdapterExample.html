@@ -1,0 +1,30 @@
+<template>
+
+    <lightning-card icon-name="standard:case" title="Cases Without Promises">
+        <div class="slds-m-around_large">
+            <template for:each={cases.data} for:item="item">
+                <div key={item.Id}>
+                    {item.Subject} <br/>
+                    {item.Description}
+                </div>
+            </template>
+            <template if:true={cases.error}>
+                An unexpected error has occurred. Please try again later.
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card icon-name="standard:case" title="Cases With Promises">
+        <div class="slds-m-around_large">
+            <template for:each={records} for:item="item">
+                <div key={item.Id}>
+                    {item.Subject} <br/>
+                    {item.Description}
+                </div>
+            </template>
+            <template if:true={errors}>
+                An unexpected error has occurred. Please try again later.
+            </template>
+        </div>
+    </lightning-card>
+    
+</template>

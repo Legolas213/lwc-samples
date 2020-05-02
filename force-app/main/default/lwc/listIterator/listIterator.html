@@ -1,0 +1,18 @@
+<template>
+
+    <!-- ITERATION USING FOR:EACH-->
+    <template for:each={contacts} for:item="con" for:index="idx">
+        <div key={con.id}>
+            {con.name} -- {idx}
+        </div>
+    </template>
+<!-- ITERATION USING FOR:EACH-->
+
+<!-- ITERATION USING ITERATOR-->
+<template iterator:it={contacts}>
+    <div key={it.value.id}>
+        {it.value.name}  --- {it.index}
+    </div>
+</template>
+<!-- ITERATION USING ITERATOR-->
+</template>
